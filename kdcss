@@ -1,0 +1,109 @@
+.sheet-main {
+  display: grid;
+  width: 800px;
+  height: 1000px;
+  grid-gap: 4px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr 1fr;
+  grid-template-areas:"header  header  header  header"
+                      "prestige  name  name  crave"
+                      "ali  ali  ali  ali"
+                      "nachi  achi1  achi2  achi3";
+}
+
+.sheet-ali {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 25em 25em;
+  grid-template-rows: 6em 12em;
+  grid-template-areas:"subali1 subali1"
+                      "subali2 subali3";
+}
+
+/*----------------- GENERAL CSS ------------------*/
+
+textarea {
+  width: 90%;
+  height: 85%;
+}
+
+input[type="number"] {
+    width: 2.5em;
+}
+
+.sheet-section {
+    padding: 5px;
+    border-style: solid;
+    background-color: gray;
+}
+
+.sheet-flex-col {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.sheet-flex-row {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/*------------- Section-specific CSS -------------*/
+
+.sheet-header {
+  grid-area: header;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sheet-name {
+  grid-area: name;
+  margin: auto;
+}
+
+.sheet-prestige {
+  grid-area: prestige;
+  text-align: center;
+}
+
+.sheet-crave {
+  grid-area: crave;
+  text-align: center;
+}
+
+.sheet-ali {
+  grid-area: ali;
+  text-align: center;
+  margin: auto;
+}
+
+.sheet-subali1 {
+  grid-area: subali1;
+}
+
+.sheet-subali2 {
+  grid-area: subali2;
+}
+
+.sheet-subali3 {
+  grid-area: subali3;
+}
+
+.sheet-nachi {
+  grid-area: nachi;
+  text-align: center;
+}
+
+.sheet-achi1 {
+  grid-area: achi1;
+  text-align: center;
+}
+
+.sheet-achi2 {
+  grid-area: achi2;
+  text-align: center;
+}
+
+.sheet-achi3 {
+  grid-area: achi3;
+  text-align: center;
+}
